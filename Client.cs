@@ -39,7 +39,7 @@ namespace Client
 
                 byte[] response = new byte[data.Length];
                 int rlen = socket.Receive(response);
-                Console.WriteLine(BitConverter.ToSingle(response, 0));
+                Console.WriteLine(BitConverter.ToSingle(response, 1));
             }
         }
 
